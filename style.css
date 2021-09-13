@@ -1,0 +1,61 @@
+*{
+    margin: 0;padding: 0;
+}
+/* css variables */
+:root{--navbar-heights:59px;}
+/* navbar */
+#navbar{display: flex;}
+
+/* navbar : logo n image */
+#logo{margin:10px 34px ;}
+#logo img{margin:3px 6px ;height: 56px;}
+
+/* navbar : List Styling */
+/* #navbar{position: relative;} */
+#navbar{position: sticky;display: flex;align-items: center;top: 0px;}
+#navbar ul{display: flex;}
+#navbar::before{content: "";background-color:black;position: absolute;height: 100%;width:165.5%;z-index: -1;opacity: 0.6;background-repeat: no-repeat;background-size:100% 100% ;}
+#navbar ul li{display: flex;list-style: none;font: 1.3rem sans-serif;}
+#navbar ul li a{text-decoration: none;color: white;display: block;margin: 34px;}
+#navbar ul li a:hover{color: rgb(246, 250, 250);background-color: rgb(94, 89, 91);}
+/* home  section */
+#home{display: flex;flex-direction: column;padding: 3px 200px;justify-content: center;align-items: center;height: 700px;}
+#home::before{content: "";background:url('order.jpg');background-repeat: no-repeat;background-size:100% 100% ; position: absolute;height: 100%;width: 100%;z-index: -1;opacity: 0.9;}
+#home h1{color: rgb(248, 246, 246);text-align: center;font-family: 'Baloo Bhai',cursive;}
+#home p{color: rgb(248, 246, 246);text-align: center;font-family: 'Baloo Bhai',cursive;}
+
+/* services section  */
+#services{
+    margin: 34px;display: flex;
+}
+.box{border: 2px solid brown;padding: 34px;margin: 3px 6px;border-radius: 28px;background-color: burlywood;}
+.box img{height: 160px;margin: auto;display: block;}
+#services{}
+
+
+
+/* Clients section */
+#client-section{height: 344px;width: 100px;display: flex;}
+#client-section::before{content: "";position: absolute;background-color: burlywood;width: 100%;height: 50%;z-index: -1;opacity: 0.7;}
+#clients{display: flex;justify-content: center;align-items: center;}
+#clients img{height: 20px;}
+.client-item{padding: 34px;}
+
+/* contact section  */
+#contact{position: relative;}
+#contact-box {display: flex;justify-content: center;align-items: center;padding-bottom: 34px;}
+#contact-box input{width: 100%;padding: 0.5rem;border-radius: 9px;font-size: 1.1rem;}
+#contact-box form{width: 40%;}
+#contact-box label{font-size: 1.3rem;font-family: 'Baloo Bhai',cursive;}
+#contact-box textarea{width: 100%;padding: 0.5rem;border-radius: 9px;font-size: 1.1rem;}
+#contact::before{content: "";position: absolute;width: 100%;height: 100%;z-index: -1;opacity: 0.6;background-image: url('contact.png');}
+footer{background: black;color: rgb(248, 246, 246);padding: 9px 20px;}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;padding: 12px;font-family: 'Bree Serif','serif';
+}
+.h-secondary{font: 2rem sans-serif;padding: 12px;}
+.btn{padding: 6px 20px;border: 2px solid white;border-radius: 10px;background-color: tomato;color: white;margin: 17px;font-size: 1.5rem;cursor: pointer;}
+.btn:hover{background-color: thistle;}
+.center{text-align: center;}
